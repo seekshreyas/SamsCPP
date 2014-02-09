@@ -1,4 +1,4 @@
-// Passing by reference
+// Reference Using Pointers
 #include <iostream>
 
 using namespace std;
