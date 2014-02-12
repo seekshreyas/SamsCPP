@@ -1,66 +1,10 @@
 // class with constructors and destructors
 
 #include <iostream>
+#include "cat.h"
+
 
 using namespace std;
-
-class cCat{
-
-	public:
-		cCat(int initAge); 		//constructor
-		~cCat(); 				//destructor
-
-		int getAge(); 			//accessor method
-		void setAge(int age); 	//accessor method
-
-		void meow();
-
-
-	private:
-		int itsAge;				//member variable
-};
-
-
-/* 
-** ---------------------------
-** CLASS :: cCat
-** accessor and helper methods
-** ---------------------------
-*/
-
-
-//constructor
-cCat::cCat(int initAge){
-	itsAge = initAge;
-}
-
-
-//destructor
-cCat::~cCat(){
-	//no action
-}
-
-
-//class accessor methods
-int cCat::getAge(){
-	return itsAge;
-}
-
-void cCat::setAge(int age){
-	itsAge = age; 
-}
-
-
-//class method
-void cCat::meow(){
-	cout << "Meow!!" << endl;
-}
-
-
-/* 
-** ---------------------------
-*/
-
 
 int main(){
 	cCat Frisky(5);
